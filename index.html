@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIBUYA UNDERGROUND MENU</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Google Fonts Cyberpunk/Anime Aesthetic -->
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+  <header id="header-container">
+    <h1 class="title center">SHIBUYA UNDERGROUND</h1>
+    <p class="tagline center">Step into the Domain of Flavor</p>
+  </header>
+
+  <main id="menu-container">
+    <!-- Section 1 Food-->
+    <section class="menu-section">
+      <h2 class="section-title">Cursed Curations</h2>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <div class="item-content">
+            <img src="https://imgur.com/RLw35Di.png" alt="The Blue Flash Burger" class="menu-photo">
+            <div class="item-text">
+              <span class="item-name">The Blue Flash Burger</span>
+              <span class="price">$18</span>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="item-content">
+            <img src="https://imgur.com/694HMx6.png" alt="Nanami’s Overtime Sandwich" class="menu-photo">
+            <div class="item-text">
+              <span class="item-name">Nanami’s Overtime Sandwich</span>
+              <span class="price">$16</span>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="item-content">
+            <img src="https://imgur.com/07toBiy.png" alt="Toji’s Heavenly Restriction Wrap" class="menu-photo">
+            <div class="item-text">
+              <span class="item-name">Toji’s Heavenly Restriction Wrap</span>
+              <span class="price">$15</span>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="item-content">
+            <img src="https://imgur.com/Zm75APM.png" alt="Divergent Fist Dumplings" class="menu-photo">
+            <div class="item-text">
+              <span class="item-name">Divergent Fist Dumplings</span>
+              <span class="price">$12</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section 2: Sweets -->
+    <section class="menu-section">
+      <h2 class="section-title">Six-Eye Sweets</h2>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <div class="item-content">
+            <img src="https://imgur.com/1pY2Q48.png" alt="Sendai Kikufuku Mochi" class="menu-photo">
+            <div class="item-text">
+              <span class="item-name">Sendai Kikufuku Mochi</span>
+              <span class="price">$6</span>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="item-content">
+            <img src="https://imgur.com/Ost5CVy.png" alt="Cursed Energy Parfait" class="menu-photo">
+            <div class="item-text">
+              <span class="item-name">Cursed Energy Parfait</span>
+              <span class="price">$7</span>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="item-content">
+            <img src="https://imgur.com/dP2Y6cr.png" alt="Sukuna's Finger Churros" class="menu-photo">
+            <div class="item-text">
+              <span class="item-name">Sukuna's Finger Churros</span>
+              <span class="price">$7</span>
+            </div>
+          </div>
+        </li>
+        <li class="menu-item">
+          <div class="item-content">
+            <img src="https://imgur.com/q6NUG4U.png" alt="Unlimited Void Sundae" class="menu-photo">
+            <div class="item-text">
+              <span class="item-name">Unlimited Void Sundae</span>
+              <span class="price">$6</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Pizza Builder Form -->
+    <section id="form-section">
+      <h2 class="section-title">Cursed Technique: Pizza Creation</h2>
+      <form id="pizza-form">
+        <fieldset>
+          <legend>Identity</legend>
+          <div class="form-group">
+            <label>Sorcerer Name:</label>
+            <input type="text" name="customer-name" placeholder="Who is ordering?" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Grade & Technique</legend>
+          <div class="form-group">
+            <label>Select Your Grade (Size):</label>
+            <div class="radio-group">
+              <label><input type="radio" name="size" value="Grade 4"> Grade 4</label>
+              <label><input type="radio" name="size" value="Grade 2"> Grade 2</label>
+              <label><input type="radio" name="size" value="Grade 1"> Grade 1</label>
+              <label><input type="radio" name="size" value="Special" class="special-grade"> Special Grade</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Technique (Crust):</label>
+            <select name="crust">
+              <option value="inumaki">The "Inumaki" Thin</option>
+              <option value="classic">Cursed Tool Classic</option>
+              <option value="prison">Prison Realm Deep Dish</option>
+              <option value="black-flash">Black Flash Stuffed</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Expansion (Toppings)</legend>
+          <div class="form-group">
+            <div class="toppings-grid">
+              <label><input type="checkbox"> Crimson Pepperoni</label>
+              <label><input type="checkbox"> Cursed Spore Mushrooms</label>
+              <label><input type="checkbox"> Shadow Realm Olives</label>
+              <label><input type="checkbox"> Shikigami Sausage</label>
+              <label><input type="checkbox"> Sizzling Sukuna Strips</label>
+              <label><input type="checkbox"> Forbidden Fruit (Pineapple)</label>
+              <label><input type="checkbox"> Volcanic Jogo Peppers</label>
+              <label><input type="checkbox"> White Snake Onions</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Binding Vow</legend>
+          <div class="form-group">
+            <label>Cheese Level:</label>
+            <input type="radio" name="cheese" value="no"> No Cheese
+            <input type="radio" name="cheese" value="reg" checked> Regular
+            <input type="radio" name="cheese" value="extra"> Extra Cheese
+          </div>
+
+          <div class="form-group">
+            <label>Special Instructions:</label>
+            <textarea placeholder="Any additional requests for your technique..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Mission Type:</label>
+            <input type="radio" name="mission" value="pickup"> Pickup
+            <input type="radio" name="mission" value="delivery"> Delivery
+          </div>
+        </fieldset>
+
+        <button type="submit" class="submit-btn">Activate Technique (Order)</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="center">
+    <p>&copy; 2026 Shibuya Underground</p>
+    <p><a href="#">Background Image Credit</a> | <a href="#">Contact Us</a></p>
+  </footer>
+</body>
+</html>
